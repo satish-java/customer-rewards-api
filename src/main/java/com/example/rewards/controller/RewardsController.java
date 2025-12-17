@@ -25,7 +25,7 @@ public class RewardsController {
         this.rewardsService = rewardsService;
     }
 
-    @GetMapping(path = "/rewards",  consumes = MediaType.APPLICATION_JSON_VALUE, produces = "text/plain")
+    @GetMapping(path = "/rewards",  produces = MediaType.APPLICATION_JSON_VALUE)
     public List<RewardSummaryDto> getRewards() {
 
         List<Transaction> transactions = List.of(
