@@ -1,21 +1,59 @@
+#  Rewards Program API
 
-# Rewards API
+The system supports transaction storage, reward calculation for the last 90 days, monthly breakdowns, and robust exception handling.
 
-Spring Boot REST API that calculates reward points for customers based on purchase transactions.
+###  **Save Transaction API**
 
-## Reward Rules
-- 2 points for every dollar spent over $100
-- 1 point for every dollar spent between $50 and $100
+**Method:** `POST`  
+**URL:** `http://localhost:8080/api/rewards/saveRewards`
 
-## Endpoint
-GET /api/rewards
+####  Request Body
 
-## Tech Stack
-- Java 17
-- Spring Boot 3.2
-- Maven
+```json
+{
+  "customerId": 1,
+  "amount": 120.0,
+  "date": "2025-12-17"
+}
+```
 
-## Notes
-- Months are calculated dynamically from transaction date
-- Includes unit tests and negative scenarios
-- No hardcoded months
+####  Response
+
+```json
+{
+  "id": 1,
+  "customerId": 1,
+  "amount": 120.0,
+  "date": "2025-12-17"
+}
+```
+
+---
+
+###  **Get Rewards for Customer**
+
+**Method:** `GET`  
+**URL:** `http://localhost:8080/api/rewards/2`
+
+####  Response
+
+```json
+{
+  "customerId": 1,
+  "monthlyRewards": [
+    {
+      "month": "OCTOBER",
+      "points": 0
+    },
+    {
+      "month": "SEPTEMBER",
+      "points": 49
+    },
+    {
+      "month": "NOVEMBER",
+      "points": 248
+    }
+  ],
+  "totalPoints": 297
+}
+```

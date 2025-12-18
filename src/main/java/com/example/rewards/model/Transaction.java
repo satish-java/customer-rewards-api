@@ -1,32 +1,26 @@
-
 package com.example.rewards.model;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
-/**
- * Represents a purchase transaction.
- */
-public class Transaction {
+@Entity
+@Table(name="transaction")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Transaction
+{
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    private final String customerId;
-    private final double amount;
-    private final LocalDate transactionDate;
-
-    public Transaction(String customerId, double amount, LocalDate transactionDate) {
-        this.customerId = customerId;
-        this.amount = amount;
-        this.transactionDate = transactionDate;
-    }
-
-    public String getCustomerId() {
-        return customerId;
-    }
-
-    public double getAmount() {
-        return amount;
-    }
-
-    public LocalDate getTransactionDate() {
-        return transactionDate;
-    }
+    private Long customerId;
+    private double amount;
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    private LocalDate date;
 }
