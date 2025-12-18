@@ -1,6 +1,6 @@
-package com.example.rewards.service;
+package com.charter.rewards.service;
 
-import com.example.rewards.exception.CustomException;
+import com.charter.rewards.exception.CustomException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

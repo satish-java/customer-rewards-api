@@ -1,8 +1,8 @@
-package com.example.rewards.controller;
+package com.charter.rewards.controller;
 
-import com.example.rewards.model.CustomerReward;
-import com.example.rewards.model.MonthlyReward;
-import com.example.rewards.service.RewardsAPIService;
+import com.charter.rewards.model.CustomerReward;
+import com.charter.rewards.model.MonthlyReward;
+import com.charter.rewards.service.RewardsAPIService;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;

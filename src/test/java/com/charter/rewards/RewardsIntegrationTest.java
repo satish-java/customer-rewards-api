@@ -1,9 +1,9 @@
-package com.example.rewards;
+package com.charter.rewards;
 
-import com.example.rewards.controller.RewardsAPIController;
-import com.example.rewards.model.CustomerReward;
-import com.example.rewards.model.MonthlyReward;
-import com.example.rewards.service.RewardsAPIService;
+import com.charter.rewards.controller.RewardsAPIController;
+import com.charter.rewards.model.CustomerReward;
+import com.charter.rewards.model.MonthlyReward;
+import com.charter.rewards.service.RewardsAPIService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;

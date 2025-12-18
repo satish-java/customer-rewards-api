@@ -1,4 +1,4 @@
-package com.example.rewards.model;
+package com.charter.rewards.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;

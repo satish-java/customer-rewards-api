@@ -1,6 +1,6 @@
-package com.example.rewards.repository;
+package com.charter.rewards.repository;
 
-import com.example.rewards.model.Transaction;
+import com.charter.rewards.model.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

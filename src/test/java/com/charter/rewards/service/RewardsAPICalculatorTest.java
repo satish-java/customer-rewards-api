@@ -1,4 +1,4 @@
-package com.example.rewards.service;
+package com.charter.rewards.service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

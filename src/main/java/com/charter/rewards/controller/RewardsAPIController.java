@@ -1,8 +1,8 @@
-package com.example.rewards.controller;
+package com.charter.rewards.controller;
 
-import com.example.rewards.model.CustomerReward;
-import com.example.rewards.model.Transaction;
-import com.example.rewards.service.RewardsAPIService;
+import com.charter.rewards.model.CustomerReward;
+import com.charter.rewards.model.Transaction;
+import com.charter.rewards.service.RewardsAPIService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -1,10 +1,10 @@
-package com.example.rewards.service;
+package com.charter.rewards.service;
 
-import com.example.rewards.exception.CustomException;
-import com.example.rewards.model.CustomerReward;
-import com.example.rewards.model.MonthlyReward;
-import com.example.rewards.model.Transaction;
-import com.example.rewards.repository.TransactionRepository;
+import com.charter.rewards.exception.CustomException;
+import com.charter.rewards.model.CustomerReward;
+import com.charter.rewards.model.MonthlyReward;
+import com.charter.rewards.model.Transaction;
+import com.charter.rewards.repository.TransactionRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

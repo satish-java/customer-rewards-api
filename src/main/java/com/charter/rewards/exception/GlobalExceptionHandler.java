@@ -1,6 +1,6 @@
-package com.example.rewards.exception;
+package com.charter.rewards.exception;
 
-import com.example.rewards.model.ErrorResponse;
+import com.charter.rewards.model.ErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

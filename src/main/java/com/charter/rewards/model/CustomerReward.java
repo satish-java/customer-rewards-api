@@ -1,4 +1,4 @@
-package com.example.rewards.model;
+package com.charter.rewards.model;
 
 import java.util.List;
 

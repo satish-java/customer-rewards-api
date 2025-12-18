@@ -1,4 +1,4 @@
-package com.example.rewards.exception;
+package com.charter.rewards.exception;
 
 public class CustomException extends RuntimeException{
     public CustomException(String message)
